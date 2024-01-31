@@ -170,10 +170,10 @@ function footerAni(){
       scrub:2,
     }
   })
-  gsap.to("#a",{
+  gsap.to("#gif #a",{
     opacity: 1,
     scrollTrigger:{
-      trigger:"#a",
+      trigger:"#gif #a",
       scroller:"#main",
       // markers:true,
       start:"top 70%",
@@ -183,18 +183,18 @@ function footerAni(){
   })
 }
 footerAni()
-var item = document.querySelector(".un");
-var under = document.querySelector(".under")
-item.addEventListener("mouseenter",function(){
-  // under.style.width = "0%"
-  gsap.from(under,{
-    width:"-50%",
-    duration:2,
-  })
-})
-item.addEventListener("mouseleave",function(){
-  under.style.width = "100%"
-})
+// var item = document.querySelector(".un");
+// var under = document.querySelector(".under")
+// item.addEventListener("mouseenter",function(){
+//   // under.style.width = "0%"
+//   gsap.from(under,{
+//     width:"-50%",
+//     duration:2,
+//   })
+// })
+// item.addEventListener("mouseleave",function(){
+//   under.style.width = "100%"
+// })
 
 
 
