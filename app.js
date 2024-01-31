@@ -62,13 +62,13 @@ function lodingAni(){
 lodingAni();
 function navSc(){
   gsap.to("nav",{
-    y:"-100%",
+    y:"-200%",
     scrollTrigger:{
         trigger:"nav",
         scroller:"#main",
-        // markers:true,
-        start:"top -10%",
-        end:"top -20%",
+        markers:true,
+        start:"top 0%",
+        end:"top -100%",
         scrub:1,
     }
 })
