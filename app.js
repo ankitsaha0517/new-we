@@ -110,18 +110,19 @@ var elImg = document.querySelectorAll(".zom");
 
 
 if ('ontouchstart' in window || navigator.maxTouchPoints) {
-  gsap.to("#con", {
-    x: -(con.offsetWidth + innerWidth),
+  const con = document.querySelector("#con");
+  gsap.to(con, {
+    x: -con.offsetWidth + innerWidth/2.5,
     scrollTrigger: {
         trigger: "#page4",
         scroller: "#main",
-        markers:true,
+        // markers:true,
         pin: true,
         scrub: 0.1,
         start: "top -5%",
         end: "top -300%",
     },
-});
+  });
 
 } else {
   elems.forEach(function(elem,inx){ 
